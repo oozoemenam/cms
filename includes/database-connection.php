@@ -21,3 +21,5 @@ try {
     throw new PDOException($e->getMessage(), $e->getCode());
     // include 'database-troubleshooting.php';
 }
+
+// TODO: Add unique constraint to category name, user email, article title

@@ -2,12 +2,23 @@
 
 This is a simple project using Core PHP
 
+## Screenshots
+
+<img src="screenshots/S1.png" alt="screenshot" />
+<img src="screenshots/S2.png" alt="screenshot" />
+<img src="screenshots/S3.png" alt="screenshot" />
+<img src="screenshots/S4.png" alt="screenshot" />
+<img src="screenshots/S5.png" alt="screenshot" />
+<img src="screenshots/S6.png" alt="screenshot" />
+<img src="screenshots/S7.png" alt="screenshot" />
+
 ## Getting Started
 
 ### Prerequisites
 
 - PHP 8.x
 - XAMPP
+- Imagick and ImageMagick
 
 ## How To Run
 
