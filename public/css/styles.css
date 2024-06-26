@@ -717,8 +717,8 @@ p.alt {
 }
 
 /* Same styles as .btn 
-   Repeated here as adding them to existing .btn class 
-   can prevent rules for button being processed. */
+	 Repeated here as adding them to existing .btn class 
+	 can prevent rules for button being processed. */
 input[type='file']::-webkit-file-upload-button {
 	color: #fff;
 	background: #295073;

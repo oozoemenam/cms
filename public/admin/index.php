@@ -1,14 +1,11 @@
 <?php
-declare(strict_types = 1);                                // Use strict types
-require '../includes/database-connection.php';            // Database connection
-require '../includes/functions.php';                      // Functions
+declare(strict_types=1);                                 // Use strict types
+include '../../bootstrap.php';                       // Include setup file
 
-$sql = "SELECT count(id) FROM article";                   // SQL
-$article_count = pdo($pdo, $sql)->fetchColumn();          // Get number of articles
-$sql = "SELECT count(id) FROM category";                  // SQL
-$category_count = pdo($pdo, $sql)->fetchColumn();         // Get number of categories
+$article_count  = $cms->getArticle()->count();           // Get number of articles
+$category_count = $cms->getCategory()->count();          // Get number of categories
 ?>
-<?php include '../includes/admin-header.php'; ?>
+<?php include APP_ROOT . '/public/includes/admin-header.php'; ?>
   <main class="container" id="content">
     <section class="header">
       <h1>Admin</h1>
@@ -19,4 +16,4 @@ $category_count = pdo($pdo, $sql)->fetchColumn();         // Get number of categ
       <tr><td><strong>Articles</strong></td><td><?= $article_count?></td><td><a href="article.php" class="btn btn-primary">Add</a></td><td><a href="articles.php" class="btn btn-primary">View</a></td></tr>
     </table>
   </main>
-<?php include  '../includes/admin-footer.php'; ?>
+<?php include APP_ROOT . '/public/includes/admin-footer.php'; ?>
