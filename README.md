@@ -1,6 +1,6 @@
 ﻿# Content Management System
 
-This is a simple project using Core PHP
+This is a simple project using Vanilla PHP
 
 ## Screenshots
 
